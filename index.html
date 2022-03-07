@@ -4,25 +4,46 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portafolio Samuel Delgado Amaya</title>
+	<style >
+		.uno{
+			background-color: #C2A4D1;
+			color: black;
+			border: 5px black;
+			text-align: center;
+		}
+		.dos{
+			background-color: #A569BD;
+			color: black;
+			border: 10px black;
+			text-align: center;
+		}				
+		.yo{
+			background-color: gray;
+			color: black;
+			border: 2px black;
+			text-align: center;
+		}
+		#si{
+			background-color: #A169BD;
+			color: white;
+			text-align: left;
+		}
+	</style>
 </head>
-<body style="background-color:#C2A4D1;">
+<body class="uno">
 
 	<header>
 		<nav>
-			
+
 		</nav>
 	</header>
 	<article>
-		<div style="background-color:#C2A4D1;">
-			<style >
-				p,h1,h2{
-				color:black;
-			}
-
-			</style>	
-			<table>
+		<div id="si">
+			<table >
 				<img src="img/svg/Imagen1.svg" alt="ajedrez" width="50">
 			</table>
+		</div>
+		<div class="uno">							
 			<table style="width: 100%;">
 				
 				<tr>
@@ -43,7 +64,7 @@
 			</table>
 			<br><br><br>		
 		</div>
-		<div style="background-color: #A569BD">
+		<div class="dos">
 			<table>
 				<tr>
 					<td style="width: 40%; text-align: center;">
@@ -58,7 +79,7 @@
 				</tr>
 			</table>
 		</div>
-		<div style="background-color:#C2A4D1;">
+		<div class="uno">
 			<table>
 				<tr>
 					<td style="width: 60%">
@@ -78,7 +99,7 @@
 				</tr>
 			</table>
 		</div>		
-		<div style="background-color: #A569BD; ">
+		<div class="dos">
 			<br><br>
 			<h1 style="text-align: center; ">Estudios</h1>
 			<hr>
@@ -129,7 +150,7 @@
 			</table>
 			<hr>
 		</div>	
-		<div style="background-color: #C2A4D1; ">
+		<div class="uno">
 			<br><br>
 			<h1 style="text-align: center; ">Desempeño Academico</h1>
 			<hr>
@@ -264,7 +285,7 @@
 			</table>
 			<hr>																					
 		</div>	
-		<div style="background-color: #A569BD; ">
+		<div class="dos">
 			<br><br>
 			<h1 style="text-align: center; ">Experiencia Laboral</h1>
 			<hr>
@@ -297,7 +318,7 @@
 				</tr>
 			</table>			
 		</div>
-		<div style="background-color: #C2A4D1; ">
+		<div class="uno">
 			<br><br>
 			<h1 style="text-align: center; ">Negocio(s)</h1>
 			<hr>
@@ -321,44 +342,39 @@
 			</table>							
 	</article>	
 	<footer> 
-		<div style="background-color: #A569BD; text-align: center;">
-			<br><br><br>
+		<div id="after_submit"></div>
+		<div class="yo">
+			<br><br>
+			<h1 style="text-align: center; ">Contáctame</h1>
+			<table>
+				<td style="width: 46%"></td>
+				<td>
+					<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+					  <div class="row">
+					    <label class="required" for="name">Tu Nombre:</label><br />
+					    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+					    <span id="name_validation" class="error_message"></span>
+					  </div>
+					  <div class="row">
+					    <label class="required" for="email">Tu email:</label><br />
+					    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+					    <span id="email_validation" class="error_message"></span>
+					  </div>
+					  <div class="row">
+					    <label class="required" for="message">Tu Mensaje:</label><br />
+					    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+					    <span id="message_validation" class="error_message"></span>
+					  </div> 
+					    <input id="submit_button" type="submit" value="Enviar Correo" />
+					</form>		
+				</td>
+				<td style="width: 33%"></td>
+			</table>		
+			<br> <br> <br>
 			<a href="https://www.facebook.com/samuel.cardoza.142/"><img src="img/facebook.png" alt="" width="3%"></a> &nbsp;&nbsp;&nbsp;
 			<a href="https://www.instagram.com/?hl=es"><img src="img/instagram.png" alt="" width="3%"></a>&nbsp;&nbsp;&nbsp;
-			<a href="https://web.whatsapp.com/"><img src="img/whats.png" alt="" width="3%"></a>&nbsp;&nbsp;&nbsp;
-			<br> <br> <br> <br>
-		</div>
-		<div id="after_submit"></div>
-		<br><br>
-		<h1 style="text-align: center; ">Contáctame</h1>
-		<table>
-			<td style="width: 45%"></td>
-			<td>
-				<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-				  <div class="row">
-				    <label class="required" for="name">Tu Nombre:</label><br />
-				    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-				    <span id="name_validation" class="error_message"></span>
-				  </div>
-				  <div class="row">
-				    <label class="required" for="email">Tu email:</label><br />
-				    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-				    <span id="email_validation" class="error_message"></span>
-				  </div>
-				  <div class="row">
-				    <label class="required" for="message">Tu Mensaje:</label><br />
-				    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-				    <span id="message_validation" class="error_message"></span>
-				  </div>
-				    
-				    <input id="submit_button" type="submit" value="Enviar Correo" />
-				</form>		
-			</td>
-			<td style="width: 33%"></td>
-		</table>		
-
-		
+			<a href="https://api.whatsapp.com/send/?phone=%2B5214981066614&text&app_absent=0"><img src="img/whats.png" alt="" width="3%"></a>&nbsp;&nbsp;&nbsp;			
+		</div>		
 	</footer>
-
 </body>
 </html>
